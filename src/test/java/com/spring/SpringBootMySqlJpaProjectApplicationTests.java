@@ -31,7 +31,7 @@ class SpringBootMySqlJpaProjectApplicationTests {
     public void testGetsAProduct() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/product/1")
                 .accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
+                .andExpect(status().isNoContent())
                 .andReturn();
     }
     
