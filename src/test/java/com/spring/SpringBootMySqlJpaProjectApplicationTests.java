@@ -26,7 +26,7 @@ class SpringBootMySqlJpaProjectApplicationTests {
                 .andExpect(status().isOk())
                 .andReturn();
     }
-    
+    //New TEst cases added
     @Test
     public void testGetsAProduct() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/product/1")
