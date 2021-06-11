@@ -50,7 +50,7 @@ class SpringBootMySqlJpaProjectApplicationTests {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(product)
                 .accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isCreated())
+                .andExpect(status().isOk)
                 .andReturn();
     }
 }
